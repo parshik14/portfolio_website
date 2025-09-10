@@ -1,13 +1,11 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import BasicButtons from './components/Button/BasicButtons'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-  <>
-  <BasicButtons />
-  <h1 className='text-3xl bg-amber-300'>parshik</h1>
-  </>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   )
 }
 
